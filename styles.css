@@ -1,13 +1,13 @@
 /* COLORS */
 
-:root {
+  :root {
     --main-color: #1e1e1e;
   }
 
 
 /* FONTS */
 
-.italiana-regular {
+  .italiana-regular {
     font-family: "Italiana", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -53,34 +53,34 @@
     display: flex;
     align-items: center;
     margin: 25px;
-}
+  }
 
-    .menu-header img {
+  .menu-header img {
     margin-right: 5px; 
-    }
+  }
 
-    .flex-column {
-        margin: 25px 20px;       
-    }
+  .flex-column {
+    margin: 25px 20px;       
+  }
 
-    .social-media {
-        margin: 25px 20px;
-        padding: 1rem; 
-    }
+  .social-media {
+    margin: 25px 20px;
+    padding: 1rem; 
+  }
 
-    .social-media img {
-        margin-right: 10px;
-    }
+  .social-media img {
+     margin-right: 10px;
+  }
 
-    .form-control {
-        border: none;
-        border-bottom: 1px solid #1e1e1e;
-        border-radius: 0px;
-        color: lightgrey;
-    }
+  .form-control {
+    border: none;
+    border-bottom: 1px solid #1e1e1e;
+    border-radius: 0px;
+    color: lightgrey;
+  }
 
 
-    /* BODY */
+  /* BODY */
 
   .welcome {
     margin-top: 100px;
@@ -88,31 +88,56 @@
 
   html, body {
     height: 100%;
-}
+  }
 
   .flipped {
     transform: scaleX(-1);
-}
+  }
 
-.arrows {
+  .arrows {
     margin: 25px 100px;
-}
+  }
 
-/* FOOTER */
 
-footer {
+  /* FOOTER */
+
+  footer {
     height: 70px;
     background-color: #f0f0f0;
     display: flex;
     align-items: center;
     overflow: hidden;
     font-size: 36px;
-}
+  }
 
-.scrolling-text {
+  .scrolling-text {
     white-space: nowrap;
     animation: scroll 20s linear infinite;
-}
+  }
+
+
+  /* MENU*/
+
+  #contentColumn {
+    margin: 0 auto;
+    transition: margin-left 0.5s ease, margin-top 0.5s ease;
+  }
+
+  #navbarCollapse.show + #contentColumn {
+    margin-left: 0;
+  }
+
+  #navbarCollapse {
+    max-height: 1000px; 
+    overflow: hidden; 
+    transition: max-height 0.3s ease; 
+  }
+
+  #navbarCollapse.collapsing {
+    max-height: 0; 
+  }
+
+/* ANIMATIONS */
 
 @keyframes scroll {
     0% {

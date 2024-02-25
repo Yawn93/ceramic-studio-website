@@ -17,7 +17,10 @@
     <div class="row flex-grow-1">
         <div class="col-12 d-flex">
             <div class="col-3 flex">
-                <span class="menu-header"><img src="assets/menu.png"/><span class="menu poppins-light">menu</span></span>
+                <span class="menu-header" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <img src="assets/menu.png" id="hamburger-menu"/>
+                    <span class="menu poppins-light">menu</span>
+                </span>
             </div>
                 <div class="col-6 flex">
                     <h1 class="logo italiana-regular">CERAMICSTUDIO</h1>
@@ -37,36 +40,36 @@
         </div>
     </div>
     <div class="row flex-grow-1">
-        <div class="col-3 flex">
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link active menu-items" href="#">about us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link menu-items" href="#">products</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link menu-items" href="#">classes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link menu-items" href="#">contacts</a>
-                </li>
-            </ul>
-            <div class="social-media">
-                <span>EN</span>
-                <span>PT</span>
-                <span>ES</span>
-            </div>
-            <div class="social-media">
-                <img src="assets/instagram.png"/>
-                <img src="assets/tiktok.png"/>
-                <img src="assets/facebook.png"/>
-                <img src="assets/whatsapp.png"/>
-                <img src="assets/youtube.png"/>
-            </div>
+        <div class="col-3 flex collapse" id="navbarCollapse">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active menu-items" href="#">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-items" href="#">products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-items" href="#">classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-items" href="#">contacts</a>
+                    </li>
+                </ul>
+                <div class="social-media">
+                    <span>EN</span>
+                    <span>PT</span>
+                    <span>ES</span>
+                </div>
+                <div class="social-media">
+                    <img src="assets/instagram.png"/>
+                    <img src="assets/tiktok.png"/>
+                    <img src="assets/facebook.png"/>
+                    <img src="assets/whatsapp.png"/>
+                    <img src="assets/youtube.png"/>
+                </div>
         </div>
 
-        <div class="col-9 flex">
+        <div class="col-9 flex" id="contentColumn">
             <h2 class="italiana-regular">welcome</h2>
             <div class="row">
                 <div class="col-6 flex description">
@@ -148,6 +151,9 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script>
+
+    // Carousel
+
     var myCarousel = new bootstrap.Carousel(document.getElementById('blogCarousel'), {
         interval: false 
     });
@@ -159,6 +165,39 @@
     document.querySelector('.arrows img[data-bs-slide="next"]').addEventListener('click', function () {
         myCarousel.next();
     });
+
+    // Collapse and extend menu
+
+    var navbarCollapse = new bootstrap.Collapse(document.getElementById('navbarCollapse'), {
+        toggle: false
+    });
+
+    var isMenuExpanded = !navbarCollapse._isCollapsed;
+
+    toggleColumnClass();
+
+    document.getElementById('hamburger-menu').addEventListener('click', function () {
+        navbarCollapse.toggle();
+
+        isMenuExpanded = !navbarCollapse._isCollapsed;
+        toggleColumnClass();
+    });
+
+    document.getElementById('navbarCollapse').addEventListener('show.bs.collapse', function () {
+        document.getElementById('hamburger-menu').src = 'assets/close.png';
+    });
+
+    document.getElementById('navbarCollapse').addEventListener('hide.bs.collapse', function () {
+        document.getElementById('hamburger-menu').src = 'assets/menu.png';
+    });
+
+    function toggleColumnClass() {
+        var contentColumn = document.getElementById('contentColumn');
+
+        contentColumn.classList.remove('col-12');
+        contentColumn.classList.remove('col-9');
+        contentColumn.classList.add(isMenuExpanded ? 'col-9' : 'col-12');
+    }
 </script>
 </body>
 </html>
