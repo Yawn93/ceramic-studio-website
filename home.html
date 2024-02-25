@@ -13,43 +13,17 @@
     <link href="styles.css" rel="stylesheet">
     <title>Ceramic studio 🪴</title>
 </head>
-<body>
-    <div class="row">
-        <div class="col-3">
-            <span class="menu-header"><img src="assets/menu.png"/><span class="menu poppins-light">menu</span></span>
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link active menu-items" href="#">about us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link menu-items" href="#">products</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link menu-items" href="#">classes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link menu-items" href="#">contacts</a>
-                </li>
-              </ul>
-        </div>
-        <div class="col-6 flex-column">
-            <h1 class="logo italiana-regular">CERAMICSTUDIO</h1>
-            <div class="row welcome">
-                <h2 class="italiana-regular">welcome</h2>
+<body class="d-flex flex-column h-100">
+    <div class="row flex-grow-1">
+        <div class="col-12 d-flex">
+            <div class="col-3 flex">
+                <span class="menu-header"><img src="assets/menu.png"/><span class="menu poppins-light">menu</span></span>
             </div>
-            <div class="row">
-                <div class="col-6 description">
-                    <p class="poppins-light">We're passionate about helping artists of all levels explore the world of ceramics in a fun and supportive environment.
-                        Our materials are 100% vegan, so you can feel good about your artistic endeavors.</p>
+                <div class="col-6 flex">
+                    <h1 class="logo italiana-regular">CERAMICSTUDIO</h1>
                 </div>
-                <div class="col-6 description">
-                    <p class="poppins-light">Our team of talented instructors are here to guide you every step of the way, whether you're a total beginner or a
-                        seasoned pro.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-2 flex-column justify-content-end">
-            <form class="form-inline">
+            <div class="col-2 flex flex-column justify-content-end">
+              <form class="form-inline">
                 <div class="input-group search-bar">
                     <input type="text" class="form-control search-input poppins-light" placeholder="Search">
                     <div class="input-group-append">
@@ -59,88 +33,114 @@
                     </div>
                 </div>
               </form>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-3">
+    <div class="row flex-grow-1">
+        <div class="col-3 flex">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active menu-items" href="#">about us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-items" href="#">products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-items" href="#">classes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-items" href="#">contacts</a>
+                </li>
+            </ul>
             <div class="social-media">
                 <span>EN</span>
                 <span>PT</span>
                 <span>ES</span>
-              </div>
-        </div>
-        <div class="col-9 d-flex justify-content-end">
-            <div class="arrows">
-                <img src="assets/arrow.png" data-bs-target="#blogCarousel" data-bs-slide="prev" />
-                <img src="assets/arrow.png" class="flipped" data-bs-target="#blogCarousel" data-bs-slide="next" />
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-3 d-flex">
-              <div class="social-media">
+            <div class="social-media">
                 <img src="assets/instagram.png"/>
                 <img src="assets/tiktok.png"/>
                 <img src="assets/facebook.png"/>
                 <img src="assets/whatsapp.png"/>
                 <img src="assets/youtube.png"/>
-              </div>
+            </div>
         </div>
-        <div class="col-9 ">
+
+        <div class="col-9 flex">
+            <h2 class="italiana-regular">welcome</h2>
+            <div class="row">
+                <div class="col-6 flex description">
+                    <p class="poppins-light">We're passionate about helping artists of all levels explore the world of ceramics in a fun and supportive environment.
+                                Our materials are 100% vegan, so you can feel good about your artistic endeavors.</p>
+                </div>
+                <div class="col-5 flex description">
+                    <p class="poppins-light">Our team of talented instructors are here to guide you every step of the way, whether you're a total beginner or a
+                                seasoned pro.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-end">
+                    <div class="arrows">
+                        <img src="assets/arrow.png" data-bs-target="#blogCarousel" data-bs-slide="prev" />
+                        <img src="assets/arrow.png" class="flipped" data-bs-target="#blogCarousel" data-bs-slide="next" />
+                    </div>
+                </div>
+            </div>
+
             <div class="row blog">
                 <div class="col-md-12">
                     <div id="blogCarousel" class="carousel slide" data-ride="carousel">
-
+            
                         <!-- Carousel items -->
-                        <div class="carousel-inner">
-
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-md-3">
+                            <div class="carousel-inner">
+            
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-3">
                                             <img src="assets/Rectangle 1.png" alt="Image" style="max-width:100%;">
-                                    </div>
-                                    <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-3">
                                             <img src="assets/Rectangle 2.png" alt="Image" style="max-width:100%;">
-                                    </div>
-                                    <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-3">
                                             <img src="assets/Rectangle 3.png" alt="Image" style="max-width:100%;">
-                                    </div>
-                                    <div class="col-md-3">
-                                        <img src="assets/Rectangle 1.png" alt="Image" style="max-width:100%;">
-                                </div>
-
-                                </div>
-                                <!--.row-->
-                            </div>
-                            <!--.item-->
-
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-md-3">
+                                        </div>
+                                        <div class="col-md-3">
                                             <img src="assets/Rectangle 1.png" alt="Image" style="max-width:100%;">
+                                        </div>
+            
                                     </div>
-                                    <div class="col-md-3">
-                                            <img src="assets/Rectangle 2.png" alt="Image" style="max-width:100%;">
-                                    </div>
-                                    <div class="col-md-3">
-                                            <img src="assets/Rectangle 3.png" alt="Image" style="max-width:100%;">
-                                    </div>
-
+                                    <!--.row-->
                                 </div>
-                                <!--.row-->
+                                <!--.item-->
+            
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <img src="assets/Rectangle 1.png" alt="Image" style="max-width:100%;">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img src="assets/Rectangle 2.png" alt="Image" style="max-width:100%;">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <img src="assets/Rectangle 3.png" alt="Image" style="max-width:100%;">
+                                            </div>
+            
+                                        </div>
+                                            <!--.row-->
+                                    </div>
+                                        <!--.item-->
+            
                             </div>
-                            <!--.item-->
-
-                        </div>
-                        <!--.carousel-inner-->
+                                    <!--.carousel-inner-->
                     </div>
-                    <!--.Carousel-->
-
+                                <!--.Carousel-->
+            
                 </div>
             </div>
         </div>
     </div>
-    <footer>
+    <footer class="mt-auto">
         <div class="scrolling-text italiana-regular">
             CERAMICSTUDIO IS A SAFE SPACE FOR BEAUTIFUL CREATIONS, USING ONLY VEGAN MATERIALS
         </div>
