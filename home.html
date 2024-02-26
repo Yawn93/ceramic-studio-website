@@ -84,63 +84,62 @@
             <div class="row">
                 <div class="col d-flex justify-content-end">
                     <div class="arrows">
-                        <img src="assets/arrow.png" data-bs-target="#blogCarousel" data-bs-slide="prev" />
-                        <img src="assets/arrow.png" class="flipped" data-bs-target="#blogCarousel" data-bs-slide="next" />
+                        <img src="assets/arrow.png" data-bs-target="#blogCarousel" data-bs-slide="prev" class="desktop-only" />
+                        <img src="assets/arrow.png" class="flipped desktop-only" data-bs-target="#blogCarousel" data-bs-slide="next" />
                     </div>
                 </div>
             </div>
 
-            <div class="row blog">
-                <div class="col-md-12">
-                    <div id="blogCarousel" class="carousel slide" data-ride="carousel">
-            
-                        <!-- Carousel items -->
-                            <div class="carousel-inner">
-            
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <img src="assets/Rectangle 1.png" alt="Image" style="max-width:100%;">
-                                        </div>
-                                        <div class="col-md-3">
-                                            <img src="assets/Rectangle 2.png" alt="Image" style="max-width:100%;">
-                                        </div>
-                                        <div class="col-md-3">
-                                            <img src="assets/Rectangle 3.png" alt="Image" style="max-width:100%;">
-                                        </div>
-                                        <div class="col-md-3">
-                                            <img src="assets/Rectangle 1.png" alt="Image" style="max-width:100%;">
-                                        </div>
-            
-                                    </div>
-                                    <!--.row-->
-                                </div>
-                                <!--.item-->
-            
-                                    <div class="carousel-item">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <img src="assets/Rectangle 1.png" alt="Image" style="max-width:100%;">
-                                            </div>
-                                            <div class="col-md-3">
-                                                <img src="assets/Rectangle 2.png" alt="Image" style="max-width:100%;">
-                                            </div>
-                                            <div class="col-md-3">
-                                                <img src="assets/Rectangle 3.png" alt="Image" style="max-width:100%;">
-                                            </div>
-            
-                                        </div>
-                                            <!--.row-->
-                                    </div>
-                                        <!--.item-->
-            
-                            </div>
-                                    <!--.carousel-inner-->
+<div class="row blog">
+    <div class="col-12">
+        <span class="poppins-light mobile-only custom-bottom-margin">Slide me <i class="fas fa-hand-point-left"></i></span>
+        <img src="assets/arrow.png" data-bs-target="#blogCarousel" data-bs-slide="prev" class="mobile-only custom-margin custom-bottom-margin" />
+        <img src="assets/arrow.png" class="flipped mobile-only custom-bottom-margin" data-bs-target="#blogCarousel" data-bs-slide="next" />
+
+        <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex">
+                        <div class="col-md-3">
+                            <img src="assets/Rectangle 1.png" alt="Image" style="max-width:100%;">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/Rectangle 2.png" alt="Image" style="max-width:100%;">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/Rectangle 3.png" alt="Image" style="max-width:100%;">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/Rectangle 1.png" alt="Image" style="max-width:100%;">
+                        </div>
                     </div>
-                                <!--.Carousel-->
-            
+                    <!--.d-flex-->
                 </div>
+                <!--.item-->
+
+                <div class="carousel-item">
+                    <div class="d-flex">
+                        <div class="col-md-3">
+                            <img src="assets/Rectangle 1.png" alt="Image" style="max-width:100%;">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/Rectangle 2.png" alt="Image" style="max-width:100%;">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="assets/Rectangle 3.png" alt="Image" style="max-width:100%;">
+                        </div>
+                    </div>
+                    <!--.d-flex-->
+                </div>
+                <!--.item-->
             </div>
+            <!--.carousel-inner-->
+        </div>
+        <!--.Carousel-->
+    </div>
+</div>
+
         </div>
     </div>
     <footer class="mt-auto">
@@ -165,6 +164,25 @@
     document.querySelector('.arrows img[data-bs-slide="next"]').addEventListener('click', function () {
         myCarousel.next();
     });
+
+    var carousel = new bootstrap.Carousel(document.getElementById('blogCarousel'), {
+        interval: false,
+        wrap: false 
+    });
+
+    function adjustCarouselItems() {
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+        if (screenWidth < 576) {
+            carousel._items = 1;
+        } else {
+            carousel._items = 4;
+        }
+    }
+
+    adjustCarouselItems();
+
+    window.addEventListener('resize', adjustCarouselItems);
 
     // Collapse and extend menu
 
@@ -198,6 +216,15 @@
         contentColumn.classList.remove('col-9');
         contentColumn.classList.add(isMenuExpanded ? 'col-9' : 'col-12');
     }
+
+    document.getElementById('navbarCollapse').addEventListener('show.bs.collapse', function () {
+  document.getElementById('contentColumn').classList.add('collapsed');
+});
+
+document.getElementById('navbarCollapse').addEventListener('hide.bs.collapse', function () {
+  document.getElementById('contentColumn').classList.remove('collapsed');
+});
+
 </script>
 </body>
 </html>
