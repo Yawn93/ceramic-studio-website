@@ -63,8 +63,6 @@
     margin: 25px 20px;       
   }
 
-
-
   .social-media {
     margin: 25px 20px;
     padding: 1rem; 
@@ -72,6 +70,10 @@
 
   .social-media img {
      margin-right: 10px;
+  }
+
+  .form-inline {
+    margin: 0px 40px;
   }
 
   .form-control {
@@ -215,7 +217,7 @@
   }
 
   .custom-margin{
-    margin-left:100px;
+    margin-left:70px;
   }
 
   .custom-bottom-margin{
