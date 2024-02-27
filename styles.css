@@ -113,6 +113,13 @@
     margin-bottom: 100px;
   }
 
+  .button-main {
+    padding: 5px 15px;
+    border: 1px solid var(--main-color);
+    background-color: white;
+    font-weight: 500;
+  }
+
 
   /* FOOTER */
 
