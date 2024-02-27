@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha384-gn5384xqQ1AOId6txRdN+jdZ3Z3bV80FZl/3R7C5mNETQURCNoq03JZsnz9lO1O6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>About us 🪴</title>
+</head>
+<body class="d-flex flex-column h-100">
+    <div class="row flex-grow-1">
+        <div class="col-12 d-flex">
+            <div class="col-3 flex">
+                <span class="menu-header" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <img src="assets/menu.png" id="hamburger-menu"/>
+                    <span class="menu poppins-light">menu</span>
+                </span>
+            </div>
+                <div class="col-6 flex">
+                    <h1 class="logo italiana-regular">CERAMICSTUDIO</h1>
+                </div>
+            <div class="col-3 flex flex-column justify-content-end desktop-only">
+              <form class="form-inline">
+                <div class="input-group search-bar">
+                    <input type="text" class="form-control search-input poppins-light" placeholder="Search">
+                    <div class="input-group-append">
+                        <button class="btn search-btn" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+              </form>
+            </div>
+        </div>
+    </div>
+    <div class="row flex-grow-1">
+        <div class="col-3 flex collapse" id="navbarCollapse">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link menu-items" href="./home.html">welcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active menu-items" href="./about.html">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-items" href="#">products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-items" href="#">classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-items" href="#">contacts</a>
+                    </li>
+                </ul>
+                <div class="social-media">
+                    <span>EN</span>
+                    <span>PT</span>
+                    <span>ES</span>
+                </div>
+                <div class="social-media">
+                    <img src="assets/instagram.png"/>
+                    <img src="assets/tiktok.png"/>
+                    <img src="assets/facebook.png"/>
+                    <img src="assets/whatsapp.png"/>
+                    <img src="assets/youtube.png"/>
+                </div>
+        </div>
+
+        <div class="col-9 flex" id="contentColumn">
+            <h2 class="italiana-regular about-us">about us</h2>
+            <div class="row">
+                <div class="col-6 flex description">
+                    <p class="poppins-light">We're passionate about helping artists of all levels explore the world of ceramics in a fun and supportive environment.
+                        Our materials are 100% vegan, so you can feel good about your artistic endeavors. 
+                        Our team of talented instructors are here to guide you every step of the way, whether you're a total beginner or a seasoned pro.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-end">
+                    <div class="arrows">
+                        <img src="assets/arrow.png" data-bs-target="#blogCarousel" data-bs-slide="prev" class="desktop-only" />
+                        <img src="assets/arrow.png" class="flipped desktop-only" data-bs-target="#blogCarousel" data-bs-slide="next" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row blog">
+                <div class="col-12">
+                    <span class="poppins-light mobile-only custom-bottom-margin">Slide me <i class="fas fa-hand-point-left"></i></span>
+                    <img src="assets/arrow.png" data-bs-target="#blogCarousel" data-bs-slide="prev" class="mobile-only custom-margin " />
+                    <img src="assets/arrow.png" class="flipped mobile-only " data-bs-target="#blogCarousel" data-bs-slide="next" />
+
+                    <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex">
+                                    <div class="col-md-3">
+                                        <img src="assets/foto5.png" alt="Image" style="max-width:100%;">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/foto6.png" alt="Image" style="max-width:100%;">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/foto7.png" alt="Image" style="max-width:100%;">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/foto8.png" alt="Image" style="max-width:100%;">
+                                    </div>
+                                </div>
+                                <!--.d-flex-->
+                            </div>
+                        </div>
+                        <!--.carousel-inner-->
+                    </div>
+                    <!--.Carousel-->
+                </div>
+            </div>
+
+            <h2 class="italiana-regular vegan">100% vegan</h2>
+            <div class="row">
+                <div class="col-6 flex description">
+                    <p class="poppins-light">Crafted with care and attention to detail, our vegan material is the perfect choice for those who want to make a statement with their
+                        designs while also supporting sustainable, ethical practices.
+                        So why settle for materials that harm animals or the environment when you can choose a 100% vegan option that's just as stunning and durable?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-end">
+                    <div class="arrows">
+                        <img src="assets/arrow.png" data-bs-target="#blogCarousel" data-bs-slide="prev" class="desktop-only" />
+                        <img src="assets/arrow.png" class="flipped desktop-only" data-bs-target="#blogCarousel" data-bs-slide="next" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row blog margin-bottom-website">
+                <div class="col-12">
+                    <span class="poppins-light mobile-only custom-bottom-margin">Slide me <i class="fas fa-hand-point-left"></i></span>
+                    <img src="assets/arrow.png" data-bs-target="#blogCarousel" data-bs-slide="prev" class="mobile-only custom-margin " />
+                    <img src="assets/arrow.png" class="flipped mobile-only " data-bs-target="#blogCarousel" data-bs-slide="next" />
+
+                    <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-flex">
+                                    <div class="col-md-3">
+                                        <img src="assets/foto8.png" alt="Image" style="max-width:100%;">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/foto7.png" alt="Image" style="max-width:100%;">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/foto6.png" alt="Image" style="max-width:100%;">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/foto5.png" alt="Image" style="max-width:100%;">
+                                    </div>
+                                </div>
+                                <!--.d-flex-->
+                            </div>
+                        </div>
+                        <!--.carousel-inner-->
+                    </div>
+                    <!--.Carousel-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="mt-auto">
+        <div class="scrolling-text italiana-regular">
+            CERAMICSTUDIO IS A SAFE SPACE FOR BEAUTIFUL CREATIONS, USING ONLY VEGAN MATERIALS
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+
+    // Carousel
+
+    var myCarousel = new bootstrap.Carousel(document.getElementById('blogCarousel'), {
+        interval: false 
+    });
+
+    document.querySelector('.arrows img[data-bs-slide="prev"]').addEventListener('click', function () {
+        myCarousel.prev();
+    });
+
+    document.querySelector('.arrows img[data-bs-slide="next"]').addEventListener('click', function () {
+        myCarousel.next();
+    });
+
+    var carousel = new bootstrap.Carousel(document.getElementById('blogCarousel'), {
+        interval: false,
+        wrap: false 
+    });
+
+    function adjustCarouselItems() {
+        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+        if (screenWidth < 576) {
+            carousel._items = 1;
+        } else {
+            carousel._items = 4;
+        }
+    }
+
+    adjustCarouselItems();
+
+    window.addEventListener('resize', adjustCarouselItems);
+
+    // Collapse and extend menu
+
+    var navbarCollapse = new bootstrap.Collapse(document.getElementById('navbarCollapse'), {
+        toggle: false
+    });
+
+    var isMenuExpanded = !navbarCollapse._isCollapsed;
+
+    toggleColumnClass();
+
+    document.getElementById('hamburger-menu').addEventListener('click', function () {
+        navbarCollapse.toggle();
+
+        isMenuExpanded = !navbarCollapse._isCollapsed;
+        toggleColumnClass();
+    });
+
+    document.getElementById('navbarCollapse').addEventListener('show.bs.collapse', function () {
+        document.getElementById('hamburger-menu').src = 'assets/close.png';
+    });
+
+    document.getElementById('navbarCollapse').addEventListener('hide.bs.collapse', function () {
+        document.getElementById('hamburger-menu').src = 'assets/menu.png';
+    });
+
+    function toggleColumnClass() {
+        var contentColumn = document.getElementById('contentColumn');
+
+        contentColumn.classList.remove('col-12');
+        contentColumn.classList.remove('col-9');
+        contentColumn.classList.add(isMenuExpanded ? 'col-9' : 'col-12');
+    }
+
+    document.getElementById('navbarCollapse').addEventListener('show.bs.collapse', function () {
+  document.getElementById('contentColumn').classList.add('collapsed');
+});
+
+document.getElementById('navbarCollapse').addEventListener('hide.bs.collapse', function () {
+  document.getElementById('contentColumn').classList.remove('collapsed');
+});
+
+</script>
+</body>
+</html>
