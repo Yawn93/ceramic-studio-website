@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha384-gn5384xqQ1AOId6txRdN+jdZ3Z3bV80FZl/3R7C5mNETQURCNoq03JZsnz9lO1O6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Contact 🪴</title>
+</head>
+<body class="d-flex flex-column h-100">
+    <div class="row flex-grow-1">
+        <div class="col-12 d-flex">
+            <div class="col-3 flex">
+                <span class="menu-header" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <img src="assets/menu.png" id="hamburger-menu"/>
+                    <span class="menu poppins-light">menu</span>
+                </span>
+            </div>
+                <div class="col-6 flex">
+                    <a class="nav-link menu-items" href="./home.html"><h1 class="logo italiana-regular">CERAMICSTUDIO</h1></a>
+                </div>
+            <div class="col-3 flex flex-column justify-content-end desktop-only">
+              <form class="form-inline">
+                <div class="input-group search-bar">
+                    <input type="text" class="form-control search-input poppins-light" placeholder="Search">
+                    <div class="input-group-append">
+                        <button class="btn search-btn" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+              </form>
+            </div>
+        </div>
+    </div>
+    <div class="row flex-grow-1">
+        <div class="col-3 flex collapse" id="navbarCollapse">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link menu-items" href="./home.html">welcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active menu-items" href="./about.html">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-items" href="./products.html">products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-items" href="./classes.html">classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-items" href="./contact.html">contacts</a>
+                    </li>
+                </ul>
+                <div class="social-media">
+                    <span class="poppins-light">EN</span>
+                    <span class="poppins-light">PT</span>
+                    <span class="poppins-light">ES</span>
+                </div>
+                <div class="social-media">
+                    <img src="assets/instagram.png"/>
+                    <img src="assets/tiktok.png"/>
+                    <img src="assets/facebook.png"/>
+                    <img src="assets/whatsapp.png"/>
+                    <img src="assets/youtube.png"/>
+                </div>
+        </div>
+
+        <div class="col-9 flex" id="contentColumn">
+            <h2 class="italiana-regular">contact us</h2>
+            <div class="row">
+                <div class="col-6 flex description">
+                    <p class="poppins-light">Have a question or want to get in touch? We're all ears!
+                        Our friendly staff is always here to help, whether you prefer to reach us by phone, email, or our convenient contact form.
+                        Let's create something amazing together!</p>
+                </div>
+            </div>
+            <div class="row contact-form">
+                <div class="col-6">
+                    <form>
+                        <div class="mb-3 poppins-light">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" class="form-control">
+                        </div>
+                        <div class="mb-3 poppins-light">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" class="form-control">
+                        </div>
+                        <div class="mb-3 poppins-light">
+                            <label for="subject" class="form-label">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Enter your subject" style="height: 100px" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="button-main poppins-light">Contact us <img src="assets/arrow.png" class="flipped"></button>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49942.94279082537!2d-8.90530115161409!3d38.523764483033986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1942feab027435%3A0x9ff23f769bb5aa54!2zU2V0w7piYWw!5e0!3m2!1spt-PT!2spt!4v1709077752090!5m2!1spt-PT!2spt"
+                        width="600"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer class="mt-auto">
+        <div class="scrolling-text italiana-regular">
+            CERAMICSTUDIO IS A SAFE SPACE FOR BEAUTIFUL CREATIONS, USING ONLY VEGAN MATERIALS
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    // Collapse and extend menu
+
+    var navbarCollapse = new bootstrap.Collapse(document.getElementById('navbarCollapse'), {
+        toggle: false
+    });
+
+    var isMenuExpanded = !navbarCollapse._isCollapsed;
+
+    toggleColumnClass();
+
+    document.getElementById('hamburger-menu').addEventListener('click', function () {
+        navbarCollapse.toggle();
+
+        isMenuExpanded = !navbarCollapse._isCollapsed;
+        toggleColumnClass();
+    });
+
+    document.getElementById('navbarCollapse').addEventListener('show.bs.collapse', function () {
+        document.getElementById('hamburger-menu').src = 'assets/close.png';
+    });
+
+    document.getElementById('navbarCollapse').addEventListener('hide.bs.collapse', function () {
+        document.getElementById('hamburger-menu').src = 'assets/menu.png';
+    });
+
+    function toggleColumnClass() {
+        var contentColumn = document.getElementById('contentColumn');
+
+        contentColumn.classList.remove('col-12');
+        contentColumn.classList.remove('col-9');
+        contentColumn.classList.add(isMenuExpanded ? 'col-9' : 'col-12');
+    }
+
+    document.getElementById('navbarCollapse').addEventListener('show.bs.collapse', function () {
+    document.getElementById('contentColumn').classList.add('collapsed');
+    });
+
+    document.getElementById('navbarCollapse').addEventListener('hide.bs.collapse', function () {
+    document.getElementById('contentColumn').classList.remove('collapsed');
+    });
+
+</script>
+</body>
+</html>

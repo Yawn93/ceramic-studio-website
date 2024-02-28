@@ -120,6 +120,17 @@
     font-weight: 500;
   }
 
+  .contact {
+    border: none;
+    border-bottom: 1px solid #1e1e1e;
+    border-radius: 0px;
+    color: lightgrey;
+  }
+
+  .contact-form {
+    margin-top: 30px;
+  }
+
 
   /* FOOTER */
 
@@ -257,6 +268,15 @@
   
   .vegan {
     margin-top: 300px;
+  }
+
+  iframe {
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .contact-form .col-6 {
+    width: 100%;
   }
   }
 
