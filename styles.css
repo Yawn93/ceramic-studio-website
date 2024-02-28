@@ -180,6 +180,10 @@
     display: none;
   }
 
+  .notselected {
+    color: lightgray;
+  }
+
   /* MOBILE */
 
   @media (max-width: 767px) {
