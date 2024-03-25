@@ -305,6 +305,10 @@
   .maps {
     display: none;
   }
+
+  #subject{
+    height: 30px;
+  }
   }
 
   
